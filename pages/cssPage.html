@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>CSS</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="brandTitle">
+                <a href="/index.html" id="homeIconContainer"><img id="homeIcon" src="/assets/icons8-home-office-96.png"
+                        alt="logo" width="100"></a>
+            </div>
+            <a class="navToggleBtn" href="javascript:void()">
+                <span class="navItemToggled"></span>
+                <span class="navItemToggled"></span>
+                <span class="navItemToggled"></span>
+            </a>
+            <div class="navLinks">
+                <ul>
+                    <li><a class="navItem" href="/pages/htmlPage.html">HTML</a></li>
+                    <li><a class="navItem" id="currentNav" href="/pages/cssPage.html">CSS</a></li>
+                    <li><a class="navItem" href="/pages/jsPage.html">JS</a></li>
+                    <li><a class="navItem" href="/pages/vscodePage.html">VSCODE</a></li>
+                    <li><a class="navItem" href="/pages/miscPage.html">MISC</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h2 class="cardTitle">Functions</h2>
+            <section class="card">
+                <section id="cssFunctionList">
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">attr()<img class="copyTagBtn hidden" src="/assets/copy-regular.svg"
+                                        alt=""></p>
+                            </section>
+                            <p class="tagDescription">Returns the value of an attribute of the selected element </p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>lorem ipsum</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">calc()<img class="copyTagBtn hidden" src="/assets/copy-regular.svg"
+                                        alt=""></p>
+                            </section>
+                            <p class="tagDescription">Allows you to perform calculations to determine CSS property
+                                values
+                            </p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>lorem ipsum</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">conic-gradient()<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Creates a conic gradient</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>lorem ipsum</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">counter()<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Returns the current value of the named counter</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>lorem ipsum</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">cubic-bezier()<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Defines a Cubic Bezier curve</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>lorem ipsum</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">hsl()<img class="copyTagBtn hidden" src="/assets/copy-regular.svg"
+                                        alt=""></p>
+                            </section>
+                            <p class="tagDescription">Defines colors using the Hue-Saturation-Lightness model (HSL)</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>lorem ipsum</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">hsla()<img class="copyTagBtn hidden" src="/assets/copy-regular.svg"
+                                        alt=""></p>
+                            </section>
+                            <p class="tagDescription">Defines colors using the Hue-Saturation-Lightness-Alpha model
+                                (HSLA)
+                            </p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>lorem ipsum</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">linear-gradient()<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Creates a linear gradient</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>lorem ipsum</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">max()<img class="copyTagBtn hidden" src="/assets/copy-regular.svg"
+                                        alt=""></p>
+                            </section>
+                            <p class="tagDescription">Uses the largest value, from a comma-separated list of values, as
+                                the
+                                property value</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>lorem ipsum</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">min()<img class="copyTagBtn hidden" src="/assets/copy-regular.svg"
+                                        alt=""></p>
+                            </section>
+                            <p class="tagDescription">Uses the smallest value, from a comma-separated list of values, as
+                                the
+                                property value</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>lorem ipsum</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">radial-gradient()<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Creates a radial gradient</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>lorem ipsum</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">repeating-conic-gradient()<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Repeats a conic gradient</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>lorem ipsum</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">repeating-linear-gradient()<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Repeats a linear gradient</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>lorem ipsum</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">repeating-radial-gradient()<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Repeats a radial gradient</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>lorem ipsum</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">rgb()<img class="copyTagBtn hidden" src="/assets/copy-regular.svg"
+                                        alt=""></p>
+                            </section>
+                            <p class="tagDescription">Defines colors using the Red-Green-Blue model (RGB)</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>lorem ipsum</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">rgba()<img class="copyTagBtn hidden" src="/assets/copy-regular.svg"
+                                        alt=""></p>
+                            </section>
+                            <p class="tagDescription">Defines colors using the Red-Green-Blue-Alpha model (RGBA)</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>lorem ipsum</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">var()<img class="copyTagBtn hidden" src="/assets/copy-regular.svg"
+                                        alt=""></p>
+                            </section>
+                            <p class="tagDescription">Inserts the value of a custom property</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>lorem ipsum</p>
+                        </section>
+                    </div>
+                </section>
+            </section>
+        </div>
+
+        <div class="container">
+            <h2 class="cardTitle">Selectors</h2>
+            <section class="card">
+                <section id="selectorList">
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">.class<img class="copyTagBtn hidden" src="/assets/copy-regular.svg"
+                                        alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects all elements with class="intro"</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>.intro</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">.class1.class2<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects all elements with both name1 and name2 set within its
+                                class
+                                attribute
+                            </p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>.name1.name2</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">.class1 .class2<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects all elements with name2 that is a descendant of an element
+                                with
+                                name1
+                            </p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>.name1 .name2</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">#id<img class="copyTagBtn hidden" src="/assets/copy-regular.svg"
+                                        alt="">
+                                </p>
+                            </section>
+                            <p class="tagDescription">Selects the element with id="firstname"</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>#firstname</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">*<img class="copyTagBtn hidden" src="/assets/copy-regular.svg"
+                                        alt="">
+                                </p>
+                            </section>
+                            <p class="tagDescription">Selects all elements</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>*</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">element<img class="copyTagBtn hidden" src="/assets/copy-regular.svg"
+                                        alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects all &lt;p&gt; elements</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>p</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">element.class<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects all &lt;p&gt; elements with class="intro"</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>p.intro</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">element,element<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects all &lt;div&gt; elements and all &lt;p&gt; elements</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>div, p</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">element element<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects all &lt;p&gt; elements inside &lt;div&gt; elements</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>div p</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">element &gt; element<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects all &lt;p&gt; elements where the parent is a &lt;div&gt;
+                                element</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>div &gt; p</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">element + element<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects the first &lt;p&gt; element that is placed immediately
+                                after
+                                &lt;div&gt; elements
+                            </p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>div + p</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">element1 ~ element2<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects every &lt;ul&gt; element that is preceded by a &lt;p&gt;
+                                element</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>p ~ ul</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">[attribute]<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects all elements with a target attribute</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>[target]</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">[attribute = value]<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects all elements with target="_blank"</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>[target=_blank]</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">[attribute ~= value]<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects all elements with a title attribute containing the word
+                                "flower"</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>[title~=flower]</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">[attribute |= value]<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects all elements with a lang attribute value equal to "en" or
+                                starting with "en-"</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>[lang|=en]</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">[attribute ^= value]<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects every &lt;a&gt; element whose href attribute value begins
+                                with
+                                "https"</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>a[href^="https"]</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">[attribute $= value]<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects every &lt;a&gt; element whose href attribute value ends
+                                with
+                                ".pdf"</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>a[href$=".pdf"]</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">[attribute *= value]<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects every &lt;a&gt; element whose href attribute value
+                                contains
+                                the substring
+                                "w3schools"
+                            </p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>a[href*="w3schools"]</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">:active<img class="copyTagBtn hidden" src="/assets/copy-regular.svg"
+                                        alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects the active link</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>a:active</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">::after<img class="copyTagBtn hidden" src="/assets/copy-regular.svg"
+                                        alt=""></p>
+                            </section>
+                            <p class="tagDescription">Insert something after the content of each &lt;p&gt; element</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>p::after</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">::before<img class="copyTagBtn hidden" src="/assets/copy-regular.svg"
+                                        alt=""></p>
+                            </section>
+                            <p class="tagDescription">Insert something before&nbsp;the content of each &lt;p&gt; element
+                            </p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>p::before</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">:checked<img class="copyTagBtn hidden" src="/assets/copy-regular.svg"
+                                        alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects every checked &lt;input&gt; element</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>input:checked</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">:default<img class="copyTagBtn hidden" src="/assets/copy-regular.svg"
+                                        alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects the default &lt;input&gt; element</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>input:default</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">:disabled<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects every disabled &lt;input&gt; element</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>input:disabled</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">:empty<img class="copyTagBtn hidden" src="/assets/copy-regular.svg"
+                                        alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects every &lt;p&gt; element that has no children (including
+                                text
+                                nodes)</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>p:empty</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">:enabled<img class="copyTagBtn hidden" src="/assets/copy-regular.svg"
+                                        alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects every enabled &lt;input&gt; element</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>input:enabled</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">:first-child<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects every &lt;p&gt; element that is the first child of its
+                                parent
+                            </p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>p:first-child</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">::first-letter<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects the first letter of every &lt;p&gt; element</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>p::first-letter</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">::first-line<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects the first line of every &lt;p&gt; element</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>p::first-line</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">:first-of-type<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects every &lt;p&gt; element that is the first &lt;p&gt;
+                                element of
+                                its parent</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>p:first-of-type</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">:focus<img class="copyTagBtn hidden" src="/assets/copy-regular.svg"
+                                        alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects the input element which has focus</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>input:focus</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">:fullscreen<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects the element that is in full-screen mode</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>:fullscreen</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">:hover<img class="copyTagBtn hidden" src="/assets/copy-regular.svg"
+                                        alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects links on mouse over</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>a:hover</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">:in-range<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects input elements with a value within a specified range</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>input:in-range</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">:indeterminate<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects input elements that are in an indeterminate state</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>input:indeterminate</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">:invalid<img class="copyTagBtn hidden" src="/assets/copy-regular.svg"
+                                        alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects all input elements with an invalid value</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>input:invalid</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">:lang(language)<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects every &lt;p&gt; element with a lang attribute equal to
+                                "it"
+                                (Italian)</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>p:lang(it)</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">:last-child<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects every &lt;p&gt; element that is the last child of its
+                                parent
+                            </p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>p:last-child</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">:last-of-type<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects every &lt;p&gt; element that is the last &lt;p&gt; element
+                                of
+                                its parent</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>p:last-of-type</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">:link<img class="copyTagBtn hidden" src="/assets/copy-regular.svg"
+                                        alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects all unvisited links</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>a:link</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">::marker<img class="copyTagBtn hidden" src="/assets/copy-regular.svg"
+                                        alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects the markers of list items</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>::marker</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">:not(selector)<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects every element that is not a &lt;p&gt; element</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>:not(p)</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">:nth-child(n)<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects every &lt;p&gt; element that is the second child of its
+                                parent
+                            </p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>p:nth-child(2)</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">:nth-last-child(n)<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects every &lt;p&gt; element that is the second child of its
+                                parent, counting from the
+                                last
+                                child</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>p:nth-last-child(2)</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">:nth-last-of-type(n)<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects every &lt;p&gt; element that is the second &lt;p&gt;
+                                element
+                                of its parent, counting
+                                from the last
+                                child</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>p:nth-last-of-type(2)</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">:nth-of-type(n)<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects every &lt;p&gt; element that is the second &lt;p&gt;
+                                element
+                                of its parent</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>p:nth-of-type(2)</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">:only-of-type<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects every &lt;p&gt; element that is the only &lt;p&gt; element
+                                of
+                                its parent</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>p:only-of-type</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">:only-child<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects every &lt;p&gt; element that is the only child of its
+                                parent
+                            </p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>p:only-child</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">:optional<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects input elements with no "required" attribute</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>input:optional</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">:out-of-range<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects input elements with a value outside a specified range</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>input:out-of-range</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">::placeholder<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects input elements with the "placeholder" attribute specified
+                            </p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>input::placeholder</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">:read-only<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects input elements with the "readonly" attribute specified</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>input:read-only</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">:read-write<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects input elements with the "readonly" attribute NOT specified
+                            </p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>input:read-write</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">:required<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects input elements with the "required" attribute specified</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>input:required</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">:root<img class="copyTagBtn hidden" src="/assets/copy-regular.svg"
+                                        alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects the document's root element</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>:root</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">::selection<img class="copyTagBtn hidden"
+                                        src="/assets/copy-regular.svg" alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects the portion of an element that is selected by a user</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>::selection</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">:target<img class="copyTagBtn hidden" src="/assets/copy-regular.svg"
+                                        alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects the current active #news element (clicked on a URL
+                                containing
+                                that anchor name)</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>#news:target </p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">:valid<img class="copyTagBtn hidden" src="/assets/copy-regular.svg"
+                                        alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects all input elements with a valid value</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>input:valid</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <section class="tagIntro">
+                                <p class="tagName">:visited<img class="copyTagBtn hidden" src="/assets/copy-regular.svg"
+                                        alt=""></p>
+                            </section>
+                            <p class="tagDescription">Selects all visited links</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>a:visited</p>
+                        </section>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </main>
+    <script src="/app.js"></script>
+</body>
+
+</html>

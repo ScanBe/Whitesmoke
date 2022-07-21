@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>VSCODE</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="brandTitle">
+                <a href="/index.html" id="homeIconContainer"><img id="homeIcon" src="/assets/icons8-home-office-96.png"
+                        alt="logo" width="100"></a>
+            </div>
+            <a class="navToggleBtn" href="javascript:void()">
+                <span class="navItemToggled"></span>
+                <span class="navItemToggled"></span>
+                <span class="navItemToggled"></span>
+            </a>
+            <div class="navLinks">
+                <ul>
+                    <li><a class="navItem" href="/pages/htmlPage.html">HTML</a></li>
+                    <li><a class="navItem" href="/pages/cssPage.html">CSS</a></li>
+                    <li><a class="navItem" href="/pages/jsPage.html">JS</a></li>
+                    <li><a class="navItem" id="currentNav" href="/pages/vscodePage.html">VSCODE</a></li>
+                    <li><a class="navItem" href="/pages/miscPage.html">MISC</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h2 class="cardTitle">Shortcuts</h2>
+            <section class="card">
+                <section id="vscodeShortcutList">
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <p class="tagName">class="[\w|\W]*?"</p>
+                            <p class="tagDescription">Select all instances (or in selection) of class/href/attribute
+                                within
+                                element</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>Used for Ctrl+F to search/replace all attribute="any value" pairs within the selected, or
+                                all, elements.</p>
+                        </section>
+                    </div>
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <p class="tagName">\n\n</p>
+                            <p class="tagDescription">Used to remove empty lines when replaced with \n</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>Used for Ctrl+F to search/replace all empty lines by replacing \n\n with \n.</p>
+                            <p>Use regular expressions in the search/replace tool.</p>
+                        </section>
+                    </div>
+                </section>
+            </section>
+        </div>
+        <div class="container">
+            <h2 class="cardTitle">Commands</h2>
+            <section class="card">
+                <section id="vscodeCommandList">
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <p class="tagName">class="[\w|\W]*?"</p>
+                            <p class="tagDescription">Select all instances (or in selection) of class/href/attribute
+                                within
+                                element</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>Used for Ctrl+F to search/replace all attribute="any value" pairs within the selected, or
+                                all, elements.</p>
+                        </section>
+                    </div>
+                </section>
+            </section>
+        </div>
+        <div class="container">
+            <h2 class="cardTitle">Extras</h2>
+            <section class="card">
+                <section id="vscodeExtraList">
+                    <div class="collapsible slow">
+                        <section class="tagHead">
+                            <p class="tagName">class="[\w|\W]*?"</p>
+                            <p class="tagDescription">Select all instances (or in selection) of class/href/attribute
+                                within
+                                element</p>
+                        </section>
+                        <section class="tagNotes">
+                            <p>Used for Ctrl+F to search/replace all attribute="any value" pairs within the selected, or
+                                all, elements.</p>
+                        </section>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </main>
+    <script src="/app.js"></script>
+</body>
+
+</html>
